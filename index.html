@@ -1,16 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        table,
+        th,
+        td,
+        tr {
+            border: solid 1px black;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Aula 02</h1>
-    
+    <h1>Exemplos de utilização das tags</h1>
+
     <h2>Apresentação das listas</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, amet?</p>
-    
+    <p>As listas em HTML são elementos essenciais para organizar e estruturar conteúdo. Existem três tipos principais:
+        listas não ordenadas (< ul>), listas ordenadas (< ol>) e listas de definição (< dl>). Elas permitem apresentar
+                    informações de forma hierárquica e fácil de entender, facilitando a navegação e a compreensão do
+                    conteúdo em páginas da web.</p>
+
     <h3>Listas ordenadas</h3>
     <ol type="A">
         <li>Coisa</li>
@@ -29,5 +42,38 @@
         <li>Coisa</li>
         <li>Coisa</li>
     </ol>
+
+    <h2>Apresentação Tabelas:</h2>
+    <table>
+        <!-- titulos das colunas -->
+
+        <th>Coluna 01</th>
+        <th>Coluna 02</th>
+        <th>Coluna 03</th>
+        <tr>
+            <td>Info Linha_01</td>
+            <td>Info Linha_01</td>
+            <td>Info Linha_01</td>
+        </tr>
+        <tr>
+            <td>Info Linha_02</td>
+            <td>Info Linha_02</td>
+            <td>Info Linha_02</td>
+        </tr>
+        <tr>
+            <td colspan="2">Info Linha_02 2/3</td>
+            <td>Info Linha_02</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Info linha_04/5 col_01</td>
+            <td>Info linha_04 col_02</td>
+            <td>Info linha_04 col_03</td>
+        </tr>
+        <tr>
+            <td>Info linha_05 col_02</td>
+            <td>Info linha_05 col_03</td>
+        </tr>
+    </table>
 </body>
+
 </html>
