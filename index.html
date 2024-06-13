@@ -74,6 +74,55 @@
             <td>Info linha_05 col_03</td>
         </tr>
     </table>
+
+    <h2>Apresentação de formularios</h2>
+    <form action="#">
+
+        <label for="textID">Rotulo da informação a ser inserido em TEXTO</label>
+        <br>
+        <input type="text" id="textID">
+        <br><br>
+        <label for="numberID">Rotulo da informação a ser inserido em NUMERO</label>
+        <br>
+        <input type="number" value="20" id="numberID">
+        <br><br>
+        <label for="emailID">Rotulo da informação a ser inserido um EMAIL</label>
+        <br>
+        <input type="email" id="emailID" placeholder="exemplo123@email.com">
+        <br><br>
+        <label for="passwordID">Rotulo da informação a ser inserido uma SENHA</label>
+        <br>
+        <input type="password" id="passwordID">
+        <br><br>
+        <label for="">Exemplo checkbox:</label>
+        <br>
+        <input type="checkbox" name="selecao" id="f" value="lojaFeminina">
+        <label for="f"> Loja Feminina </label>
+        <br>
+        <input type="checkbox" name="selecao" id="m" value="lojaMasculino">
+        <label for="m"> Loja Masculino </label>
+        <br><br>     
+        <label for="">Exemplo de Seleção unica:</label>
+        <br>
+        <input type="radio" name="selecaoUnica" id="n" value="lojaFeminina">
+        <label for="n"> Loja Feminina </label>
+        <br>
+        <input type="radio" name="selecaoUnica" id="o" value="lojaMasculino">
+        <label for="o"> Loja Masculino </label>
+        
+        <br><br>
+        <label for="testeSelect">Selecione um Numero</label>
+        <br>
+        <select name="testeSelect" id="testeSelect">
+            <option value="1" disabled>Um</option>
+            <option value="2">Dois</option>
+            <option value="3">Três</option>
+        </select>
+
+        <br><br>
+
+        <textarea name="textArea" id="textArea" cols="30" rows="10"> </textarea>
+    </form>
 </body>
 
 </html>
