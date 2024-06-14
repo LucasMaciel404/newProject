@@ -16,113 +16,147 @@
 </head>
 
 <body>
-    <h1>Exemplos de utilização das tags</h1>
 
-    <h2>Apresentação das listas</h2>
-    <p>As listas em HTML são elementos essenciais para organizar e estruturar conteúdo. Existem três tipos principais:
-        listas não ordenadas (< ul>), listas ordenadas (< ol>) e listas de definição (< dl>). Elas permitem apresentar
-                    informações de forma hierárquica e fácil de entender, facilitando a navegação e a compreensão do
-                    conteúdo em páginas da web.</p>
 
-    <h3>Listas ordenadas</h3>
-    <ol type="A">
-        <li>Coisa</li>
-        <li>Coisa</li>
-        <li>Coisa</li>
-    </ol>
-    <h3>Listas não ordenadas</h3>
-    <ul>
-        <li>Coisa</li>
-        <li>Coisa</li>
-        <li>Coisa</li>
-    </ul>
-    <h3>Continuação de listas ordenadas</h3>
-    <ol type="A" start="4">
-        <li>Coisa</li>
-        <li>Coisa</li>
-        <li>Coisa</li>
-    </ol>
+    <header>
+        <img src="geracao_tech.png" width="150px" alt="logo da geração tech">
+        <h1>Geração Tech - Desenvolvimento Front-end</h1>
 
-    <h2>Apresentação Tabelas:</h2>
-    <table>
-        <!-- titulos das colunas -->
+        <nav>
+            <a href="">Tags de texto</a>
+            <a href="">Tags de listas</a>
+            <a href="">Tags de tabelas</a>
+            <a href="">Tags de formularios</a>
+            <a href="">Tags de divisões</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Exemplos de utilização das tags</h1>
+        <section id="listas">
+            <h2>Apresentação das listas</h2>
+            <p>As listas em HTML são elementos essenciais para organizar e estruturar conteúdo. Existem três tipos
+                principais:
+                listas não ordenadas (< ul>), listas ordenadas (< ol>) e listas de definição (< dl>). Elas permitem
+                            apresentar
+                            informações de forma hierárquica e fácil de entender, facilitando a navegação e a
+                            compreensão do
+                            conteúdo em páginas da web.</p>
 
-        <th>Coluna 01</th>
-        <th>Coluna 02</th>
-        <th>Coluna 03</th>
-        <tr>
-            <td>Info Linha_01</td>
-            <td>Info Linha_01</td>
-            <td>Info Linha_01</td>
-        </tr>
-        <tr>
-            <td>Info Linha_02</td>
-            <td>Info Linha_02</td>
-            <td>Info Linha_02</td>
-        </tr>
-        <tr>
-            <td colspan="2">Info Linha_02 2/3</td>
-            <td>Info Linha_02</td>
-        </tr>
-        <tr>
-            <td rowspan="2">Info linha_04/5 col_01</td>
-            <td>Info linha_04 col_02</td>
-            <td>Info linha_04 col_03</td>
-        </tr>
-        <tr>
-            <td>Info linha_05 col_02</td>
-            <td>Info linha_05 col_03</td>
-        </tr>
-    </table>
+            <h3>Listas ordenadas</h3>
+            <ol type="A">
+                <li>Coisa</li>
+                <li>Coisa</li>
+                <li>Coisa</li>
+            </ol>
+            <h3>Listas não ordenadas</h3>
+            <ul>
+                <li>Coisa</li>
+                <li>Coisa</li>
+                <li>Coisa</li>
+            </ul>
+            <h3>Continuação de listas ordenadas</h3>
+            <ol type="A" start="4">
+                <li>Coisa</li>
+                <li>Coisa</li>
+                <li>Coisa</li>
+            </ol>
+        </section>
+        <section id="tabelas">
+            <h2>Apresentação Tabelas:</h2>
+            <table>
+                <!-- titulos das colunas -->
 
-    <h2>Apresentação de formularios</h2>
-    <form action="#">
+                <th>Coluna 01</th>
+                <th>Coluna 02</th>
+                <th>Coluna 03</th>
+                <tr>
+                    <td>Info Linha_01</td>
+                    <td>Info Linha_01</td>
+                    <td>Info Linha_01</td>
+                </tr>
+                <tr>
+                    <td>Info Linha_02</td>
+                    <td>Info Linha_02</td>
+                    <td>Info Linha_02</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Info Linha_02 2/3</td>
+                    <td>Info Linha_02</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Info linha_04/5 col_01</td>
+                    <td>Info linha_04 col_02</td>
+                    <td>Info linha_04 col_03</td>
+                </tr>
+                <tr>
+                    <td>Info linha_05 col_02</td>
+                    <td>Info linha_05 col_03</td>
+                </tr>
+            </table>
 
-        <label for="textID">Rotulo da informação a ser inserido em TEXTO</label>
-        <br>
-        <input type="text" id="textID">
-        <br><br>
-        <label for="numberID">Rotulo da informação a ser inserido em NUMERO</label>
-        <br>
-        <input type="number" value="20" id="numberID">
-        <br><br>
-        <label for="emailID">Rotulo da informação a ser inserido um EMAIL</label>
-        <br>
-        <input type="email" id="emailID" placeholder="exemplo123@email.com">
-        <br><br>
-        <label for="passwordID">Rotulo da informação a ser inserido uma SENHA</label>
-        <br>
-        <input type="password" id="passwordID">
-        <br><br>
-        <label for="">Exemplo checkbox:</label>
-        <br>
-        <input type="checkbox" name="selecao" id="f" value="lojaFeminina">
-        <label for="f"> Loja Feminina </label>
-        <br>
-        <input type="checkbox" name="selecao" id="m" value="lojaMasculino">
-        <label for="m"> Loja Masculino </label>
-        <br><br>     
-        <label for="">Exemplo de Seleção unica:</label>
-        <br>
-        <input type="radio" name="selecaoUnica" id="n" value="lojaFeminina">
-        <label for="n"> Loja Feminina </label>
-        <br>
-        <input type="radio" name="selecaoUnica" id="o" value="lojaMasculino">
-        <label for="o"> Loja Masculino </label>
-        
-        <br><br>
-        <label for="testeSelect">Selecione um Numero</label>
-        <br>
-        <select name="testeSelect" id="testeSelect">
-            <option value="1" disabled>Um</option>
-            <option value="2">Dois</option>
-            <option value="3">Três</option>
-        </select>
+        </section>
 
-        <br><br>
+        <section id="formularios">
+            <h2>Apresentação de formularios</h2>
+            <form action="#">
 
-        <textarea name="textArea" id="textArea" cols="30" rows="10"> </textarea>
-    </form>
+                <label for="textID">Rotulo da informação a ser inserido em TEXTO</label>
+                <br>
+                <input type="text" id="textID">
+                <br><br>
+                <label for="numberID">Rotulo da informação a ser inserido em NUMERO</label>
+                <br>
+                <input type="number" value="20" id="numberID">
+                <br><br>
+                <label for="emailID">Rotulo da informação a ser inserido um EMAIL</label>
+                <br>
+                <input type="email" id="emailID" placeholder="exemplo123@email.com">
+                <br><br>
+                <label for="passwordID">Rotulo da informação a ser inserido uma SENHA</label>
+                <br>
+                <input type="password" id="passwordID">
+                <br><br>
+                <label for="">Exemplo checkbox:</label>
+                <br>
+                <input type="checkbox" name="selecao" id="f" value="lojaFeminina">
+                <label for="f"> Loja Feminina </label>
+                <br>
+                <input type="checkbox" name="selecao" id="m" value="lojaMasculino">
+                <label for="m"> Loja Masculino </label>
+                <br><br>
+                <label for="">Exemplo de Seleção unica:</label>
+                <br>
+                <input type="radio" name="selecaoUnica" id="n" value="lojaFeminina">
+                <label for="n"> Loja Feminina </label>
+                <br>
+                <input type="radio" name="selecaoUnica" id="o" value="lojaMasculino">
+                <label for="o"> Loja Masculino </label>
+
+                <br><br>
+                <label for="testeSelect">Selecione um Numero</label>
+                <br>
+                <select name="testeSelect" id="testeSelect">
+                    <option value="1" disabled>Um</option>
+                    <option value="2">Dois</option>
+                    <option value="3">Três</option>
+                </select>
+
+                <br><br>
+
+                <textarea name="textArea" id="textArea" cols="30" rows="10"> </textarea>
+            </form>
+        </section>
+
+
+    </main>
+    <footer>
+
+    </footer>
+
+
+
+
+
 </body>
 
 </html>
